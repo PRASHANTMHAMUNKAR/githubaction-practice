@@ -9,19 +9,3 @@ jobs:
       - name: Building an app
         run: 
           echo "Building JAVA app"
-
-  test:
-    runs-on: ubuntu-latest
-    needs: build
-    steps: 
-      - name: Testing an app 
-        run: 
-          echo "tesing an JAVA app"
-
-  deploy: 
-    runs-on: ubuntu-latest
-    needs: test
-    steps: 
-      - name: Deploying an app
-        run: 
-          echo "Deploying JAVA app"               
