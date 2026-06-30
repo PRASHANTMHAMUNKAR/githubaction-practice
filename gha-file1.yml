@@ -1,0 +1,25 @@
+name: build test deploy
+on: workflow_despatch
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build steps
+        run: 
+          echo "building the app"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing steps
+        run: 
+          echo "Running the app"
+
+  deploy: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Deploying steps
+        run: 
+          echo "Deploying the app"
+
