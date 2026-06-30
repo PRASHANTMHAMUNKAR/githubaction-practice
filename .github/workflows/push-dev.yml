@@ -1,0 +1,15 @@
+name: push trigger on dev
+on: push
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Display branch name
+        run: echo "Workflow triggered on the DEV branch"
+
+      - name: Print GitHub event
+        run: echo "Event is ${{ github.event_name }}"
+
+      - name: Print current branch
+        run: echo "Branch is ${{ github.ref_name }}"
