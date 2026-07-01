@@ -1,10 +1,8 @@
-name: Hello World
-on: workflow_dispatch
+name: checkout action
+on: push
 jobs: 
-  hello: 
+  action-demo: 
       runs-on: ubuntu-latest
       steps:
-        - name: Hello Step 
-          run: |
-           echo "My name is ${{ vars.MY_NAME }}"
-           echo "This is line two"
+        - name: checkout action
+          uses: actions/checkout@v4
