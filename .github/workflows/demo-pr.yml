@@ -1,0 +1,20 @@
+name: demo-pull-pull_request 
+on:
+  pull_reqest:
+    - main
+
+  jobs:
+    build: 
+      runs-on: ubuntu-latest
+      steps:
+        - name: build steps
+          run: 
+            echo "build the app"
+
+    test: 
+      runs-on: ubuntu-latest
+      needs: build
+      steps: 
+        - name: Test the app
+          run:
+            echo "testing the app"
