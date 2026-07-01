@@ -1,6 +1,6 @@
-name: demo-pull-pull_request 
+name: demo pull_request
 on:
-  pull_reqest:
+  pull_request:
     - main
 
   jobs:
