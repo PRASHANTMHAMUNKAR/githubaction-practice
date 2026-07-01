@@ -8,15 +8,15 @@ jobs:
   checkout-demo:
     runs-on: ubuntu-latest
   
-steps:
-  - name: checkout action
-    uses: action/checkout@v4
+  steps:
+    - name: checkout action
+      uses: actions/checkout@v4
 
-  - name: current directory
-    run: pwd
+    - name: current directory
+      run: pwd
 
-  - name: list the project directory
-    run: ls -la
+    - name: list the project directory
+      run: ls -la
 
-  - name: show the content of the file
-    run: cat blank.yml    
+    - name: show the content of the file
+      run: cat blank.yml    
