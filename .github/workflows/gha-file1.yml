@@ -1,5 +1,8 @@
 name: build test deploy
-on: workflow_dispatch
+on: 
+  push:
+    branches:
+     - dev 
 
 jobs: 
   build:
