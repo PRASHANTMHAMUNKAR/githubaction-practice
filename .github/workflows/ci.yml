@@ -1,0 +1,22 @@
+name: demo ci with checkout
+on:
+  push:
+    branches:
+        - main
+
+jobs:
+    checkout-demo
+runs-on: ubuntu-latest
+  
+steps:
+  - name: checkout action
+    uses: action/checkout@v4
+
+  - name: current directory
+    run: pwd
+
+  - name: list the project directory
+    run: ls -la
+
+  - name: show the content of the file
+    run: cat blank.yml    
