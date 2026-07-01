@@ -5,8 +5,8 @@ on:
         - main
 
 jobs:
-    checkout-demo
-runs-on: ubuntu-latest
+  checkout-demo:
+    runs-on: ubuntu-latest
   
 steps:
   - name: checkout action
